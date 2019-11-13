@@ -1,0 +1,159 @@
+.email-filter {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    max-width: 1150px;
+}
+
+
+.main-filter-container {
+    display: flex;
+    margin-left: 5rem;
+
+}
+
+.email-filter input {
+    border: none;
+    border:none;
+    border-right: 1px solid lightcoral;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    padding: 10px;
+    font-size: 0.7em;
+    outline: none;
+    width: 80%;
+}
+
+.email-filter select {
+    border:none;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    padding: 10px;
+    font-size: 1.3rem;
+    outline: none;
+    cursor: pointer;
+}
+.sort-container{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    margin-left: 10px;
+    max-width: 13.5rem;
+    justify-content: space-around;
+}
+.sort-container span{
+    font-weight: 400;
+    padding: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+}
+.sort-container h6{
+    margin-right: 10px;
+    font-weight: 400;
+    padding: 10px;
+    cursor:default;
+    font-size: 1.3rem ;
+}
+.sort-container span{
+    margin-right: 10px;
+    border-left: 1px solid lightcoral;
+}
+.filter-container{
+    display: flex;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+
+}
+
+.compose-btn {
+    background-color: #f08080;
+    border-radius: 20px;
+    width: 10rem;
+    height: 2.5rem;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 5px 6px -5px black;
+    cursor: pointer;
+}
+.compose-btn span{
+    font-size: 1.3rem;
+}
+
+.compose-btn:hover {
+    background-color: rgb(252, 172, 172);
+}
+
+.compose-btn img {
+    margin-top:5px;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.compose-btn span {
+    padding-top: 4px;
+}
+.email-select option{
+    background-color: rgb(250, 226, 226); 
+    border: 1px lightcoral solid;
+}
+
+@media (max-width: 750px) {
+     .main-filter-container{
+         width: 100%;
+         margin-left: 0;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+     }
+    .email-filter{
+        flex-direction: column-reverse;
+        height: 120px;
+        padding: 0;
+    }
+    .compose-btn span{
+        display: none;
+    }
+    .compose-btn img{
+        width: 2.5rem;
+        height:2.53rem;
+        margin: 0;
+    }
+    .compose-btn{
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        padding-top: 6px;
+        padding-left: 7px;
+        position: fixed;
+        bottom: 35px;
+        right: 30px;
+        box-shadow:2px 5px 10px -2px black;
+    }
+    .email-filter select{
+        width: 40%;
+    }
+    .email-filter input{
+        width:60%;
+    }
+    .filter-container{
+        width: 1000%;
+    }
+    .sort-container{
+        width: 100%;
+        margin-top:10px;
+    }
+
+}

@@ -1,0 +1,14 @@
+.email-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 70%;
+    margin-top:1.8rem;
+}
+
+@media (max-width: 750px) {
+   .email-list{
+       width: 100%;
+   }
+
+}

@@ -1,0 +1,177 @@
+.note-edit {
+    border: 1px solid #F08080;
+    background-color: rgba(255, 220, 220, 0.568);
+    padding: 10px;
+    margin: 10px auto;
+    min-height: 200px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+@media (max-width: 950px) {
+    .note-edit {
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
+.edit-title-input {
+    border: none;
+    border-bottom: 1px solid lightcoral;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    width: 227px;
+
+}
+
+.note-edit-textarea {
+    border: 1px solid lightcoral;
+    background-color: rgba(255, 220, 220, 0.5);
+    border-radius: 10px;
+    min-height: 25px;
+    margin: 5px 0;
+    outline: none;
+    resize: none;
+    width: 227px;
+    font-size: 1.3rem;
+}
+
+.url-input {
+    font-family: monospace;
+    border: 1px solid lightcoral;
+    background-color: rgba(255, 220, 220, 0.459);
+    border-radius: 10px;
+    min-height: 25px;
+    outline: none;
+    width: 227px;
+}
+
+.edit-inputs {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.edit-add-btn {
+    background-color: rgb(253, 211, 211);
+    border: 1px solid rgba(240, 128, 128, 0.445);
+    border-radius: 10px;
+    width: 6rem;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    outline: none;
+}
+
+.edit-add-btn:hover {
+    background-color: rgba(207, 172, 172, 0.548);
+}
+
+.add-todo-btn {
+    margin: 10px auto
+}
+
+.edited-at {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.note-checks {
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pin-color-wrapper{
+    margin-left: 5px;
+    min-height: 130px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (max-width: 950px) {
+    .note-checks {
+        margin-bottom: 10px;
+        width: 15%;
+        min-height: 20px;
+        flex-direction: row;
+    }
+    .pin-color-wrapper {
+        width: 15%;
+        flex-direction: row;
+        min-height: 20px;
+    }
+}
+
+
+.add-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.done-todo {
+    text-decoration: line-through;
+}
+
+/* icons */
+
+.fas {
+    color: rgba(136, 136, 136, 0.575);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.preview-icon {
+    color: rgba(53, 53, 53, 0.493);
+    font-size: 1.4rem;
+    transition: opacity .2s ease-in-out;
+}
+
+.icon-clicked {
+    color: black;
+}
+
+.fas:hover {
+    color: rgb(136, 136, 136);
+    cursor: pointer;
+}
+
+.preview-icon:hover {
+    color: rgb(44, 44, 44);
+}
+
+.fas:active {
+    color: rgb(255, 255, 255)
+}
+
+.hide {
+    display: none;
+}
+
+.slide-fade-enter-active, .slide-fade-leave-active {
+    transition: opacity .5s;
+}
+
+.slide-fade-enter, .slide-fade-leave-to
+    {
+    opacity: 0;
+}
